@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after
+	box-sizing inherit
+	
+html
+	-moz-osx-font-smoothing grayscale
+	-webkit-font-smoothing antialiased
+	text-rendering optimizeLegibility
+	box-sizing border-box
+
+body
+	font 300 18px/23px $circular
+	color $grey
+	float left
+	width 100%
+	background-color $greybg
+
+h1
+	font 400 62px/75px $circular
+	color #fff
+	margin 0 0 20px
+
+	@media (max-width: 850px)
+		font 400 50px/55px $circular
+	
+h2
+	font 300 18px/23px $circular
+	color #fff
+	margin 0
+
+h3
+	font 700 22px/100% $circular
+	color $primary
+	margin-bottom 30px
+
+h4
+	font 400 18px/100% $circular
+	color $grey
+	margin-bottom 30px
+
+p
+	font 300 18px/23px $circular
+	color $grey
+	margin-bottom 15px
+
+	strong,
+	b
+		font-weight 700
+	
+img
+	max-width 100%
+	height auto
+
+a
+	color $primary
+	transition: all 0.2s ease-in-out
+
+	&:hover
+		color $primary
+		text-decoration none
+
+ol,
+ul
+	padding-left 18px
+
+li
+	font 400 18px/23px $circular
+
+table
+	font 300 18px/23px $circular
+	color $grey
+	table-layout fixed
+	width 100%
+
+	tr
+		border-bottom 1px solid #eee
+
+		&:nth-child(even)
+			background-color $greybg
+		
+		&:last-child
+			border-bottom 0
+		
+		td
+			padding 5px
+			vertical-align top
+		
+	
+

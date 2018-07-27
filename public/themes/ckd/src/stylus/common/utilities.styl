@@ -1,0 +1,60 @@
+.outer 
+	width 100%
+	float left
+
+.inner 
+	display flex
+	padding 0 20px
+	max-width 1210px
+	margin 0 auto
+
+.v-center 
+	top 50%
+	transform translate(0, -50%)
+	position absolute
+
+.background-cover 
+	background-size cover
+	background-position center center
+
+// Responsive hero map
+.embed-map-container
+	position relative
+	padding-bottom 342px
+	overflow hidden
+	max-width 100%
+	height auto
+	margin-bottom 20px
+
+	iframe,
+	object,
+	embed
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+
+.embed-container
+	position relative
+	padding-bottom 56.25% /* 16:9 */
+	padding-top 25px
+	height 0
+
+	iframe 
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+
+.clearfix 
+	display inline-block
+
+	&::after 
+		visibility hidden
+		display block
+		font-size 0
+		content " "
+		clear both
+		height 0

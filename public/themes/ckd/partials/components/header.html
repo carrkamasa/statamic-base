@@ -1,0 +1,34 @@
+<section class="header">
+
+    <div class="inner">
+
+        <div class="header--logo">
+            <a href="/">
+                <img src="{{ theme:dist/images src="logo.svg" cache_bust="true" }}">
+            </a>
+        </div>
+
+        <nav class="header--navigation">
+
+            <ul class="main-navigation--menu">
+                {{ nav from="/" include_home="true" scope="tag" }}
+                    {{ if children }}
+                    <li class="has-children">
+                        <a href="{{ url }}">{{ title }}</a>
+                        <ul class="dropdown">
+                            {{ children }}
+                                <li><a href="{{ url }}">{{ title }}</a></li>
+                            {{ /children }}
+                        </ul>
+                    </li>
+                    {{ else }}
+                        <li><a href="{{ url }}">{{ title }}</a></li>
+                    {{ endif }}
+                {{ /nav }}
+            </ul>
+            
+        </nav>
+
+    </div>
+
+</section>

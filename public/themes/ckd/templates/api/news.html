@@ -1,0 +1,13 @@
+[
+{{ collection:company_news }}
+    {  
+        "id": "{{ id }}",
+        "title": "{{ title }}",
+        "url": "{{ permalink }}",
+        "date": "{{ date format="d/m/Y" }}",
+        "hero_image": "{{ hero_image }}",
+        "excerpt": {{ main_content | strip_tags | safe_truncate:200:... | to_json }},
+        "main_content": {{ main_content | to_json }}
+    }{{ if !last }},{{/if}}
+{{ /collection:company_news }}
+]

@@ -1,0 +1,21 @@
+start_page: dashboard
+date_format: d/m/Y H:i
+pagination_size: 50
+widgets:
+  - 
+    type: collection
+    collection: company_news
+    limit: 3
+  - 
+    type: collection
+    collection: reports
+    limit: 3
+  - 
+    type: form
+    form: contact
+    limit: 5
+    title: Recent Submissions
+    width: full
+    fields:
+      - name
+      - email

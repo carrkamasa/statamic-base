@@ -1,0 +1,8 @@
+d32e14fb-08c9-44c2-aaf8-21200852bafd:
+  title: Admin
+  permissions:
+    - super
+ad313232-f675-4920-8c90-39b7051d10c0:
+  title: Member
+  slug: member
+  permissions: [ ]

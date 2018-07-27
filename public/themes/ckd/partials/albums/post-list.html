@@ -1,0 +1,21 @@
+<section class="group-news">
+
+    <div class="inner">
+
+        <div class="group-news__post-list">
+
+            {{ collection:albums limit="10" }}
+
+                <a class="news-item card" href="{{ url }}">
+
+                    {{ title }}
+
+                </a>
+
+            {{ /collection:albums }}
+        
+        </div>
+
+    </div>
+
+</section>

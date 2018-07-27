@@ -1,0 +1,146 @@
+.header
+    position relative
+    width 100%
+    height 100px
+    background-color $black
+    z-index 100
+
+    .inner
+        position relative
+        display: flex
+        align-items center
+        max-width 1210px
+        height 100%
+        margin 0 auto
+        padding 0 20px
+
+    &--logo 
+        flex-basis: 140px
+
+        img 
+            width 140px
+            height 60px
+
+    &--navigation
+        flex-grow: 1
+
+        ul
+            list-style none
+            position relative
+            margin 0
+            padding 20px 0 20px 20px
+            float right
+
+            a
+                display inline
+                text-decoration none
+                padding 15px
+                font 400 18px/23px $circular
+                color #fff
+                opacity 1
+                transition opacity 0.3s ease
+
+                &:hover
+                    opacity 0.6
+
+            li
+                position relative
+                margin 0
+                padding 0
+                display inline
+
+                &.active
+                    > a
+                        text-decoration: underline      
+
+                &:last-child
+                    a
+                        padding-right 0
+
+            .has-children
+            
+                a
+                    padding-right 0
+                
+                &::after
+                    content "\00a0\00a0\00a0\00a0"
+                    background-image url(../images/down-arrow.svg)
+                    background-size 15px 15px
+                    background-repeat no-repeat
+                    background-position left center
+                    width 20px
+                    height 20px
+                    margin-left 3px
+                        
+            ul
+                visibility hidden
+                position absolute
+                top 150%
+                left 0
+                background-color $primary
+                border-radius 5px
+                padding 10px 0
+                transform translate(0, -8px)
+                transition all 0 ease
+                opacity 0
+                width 230px
+
+                li
+                    float left
+                    width calc(100% - 18px)
+
+                    &.active
+                        color #fff
+
+                a
+                    font 400 15px/20px $circular
+                    padding 10px 18px
+                    text-transform none
+                    color #fff
+                    width 100%
+                    display inline-block
+                    text-align left
+
+                    &:hover
+                        color #fff
+                    
+                // Links within 1st level dropdowns
+                .has-children
+
+                    a
+                        padding-right 0
+                    
+                    &::after
+                        content "\00a0\00a0\00a0\00a0"
+                        background-image url(../images/right-arrow-white.svg)
+                        background-size 12px 12px
+                        background-repeat no-repeat
+                        background-position left center
+                        width 20px
+                        height 20px
+                        margin-left 3px
+                        position absolute
+                        top 10px
+                        right 5px
+
+                // 2nd level dropdown
+                ul
+                    top -12px
+                    left 100%
+                
+            li:hover > ul
+                visibility visible
+                transform translate(0, 0)
+                transition all 0.3s ease
+                opacity 1
+            
+        &.expanded
+            transition max-height 0.8s ease
+            max-height 1000px
+        
+.news-list
+    width 100%
+    float left
+
+    &--item
+        lost-column 1/3

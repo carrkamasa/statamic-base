@@ -1,0 +1,12 @@
+image_manipulation_route: /assets/generated
+image_manipulation_secure: true
+auto_crop: true
+image_manipulation_driver: gd
+image_manipulation_cached: true
+image_manipulation_cached_path: public/assets/generated
+image_manipulation_presets:
+  thumbnail:
+    w: 400
+    q: 30
+thumbnail_max_width: 6000
+thumbnail_max_height: 6000

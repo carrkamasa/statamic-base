@@ -1,0 +1,6 @@
+.DS_Store
+/.env
+/.vscode
+/public/assets/generated
+/statamic.code-workspace
+/public/themes/ckd/dist
