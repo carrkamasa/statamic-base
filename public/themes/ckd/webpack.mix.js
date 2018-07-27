@@ -13,12 +13,9 @@ mix
     })
     .options({
         processCssUrls: false,
-        postCss: [
-            require('lost')
-        ],
     })
-    .js('src/js/main.js', 'js/ckd.js')
-    .stylus('src/stylus/main.styl', 'css/ckd.css')
+    .js('src/js/main.js', 'js/app.js')
+    .css('src/stylus/main.scss', 'css/app.css')
     .copyDirectory('src/images', 'dist/images')
     .copyDirectory('src/fonts', 'dist/fonts')
     .sourceMaps()
@@ -30,8 +27,8 @@ mix.browserSync({
     open: true,
     proxy: 'statamic.test',
     files: [
-        'src/stylus/*.styl',
-        'src/stylus/**/*.styl',
+        'src/stylus/*.scss',
+        'src/stylus/**/*.scss',
         'src/js/*.js',
         'templates/*.html',
         'templates/**/*.html',

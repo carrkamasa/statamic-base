@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+	
+html {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	box-sizing: border-box;
+}
+
+body {
+	font: 300 18px/23px sans-serif;
+	color: $grey;
+	float: left;
+	width: 100%;
+}
+
+h1 {
+	font: 400 62px/75px $circular;
+	color: #fff;
+	margin: 0 0 20px;
+}
+	
+h2 {
+	font: 300 18px/23px $circular;
+	color: #fff;
+	margin: 0;
+}
+
+h3 {
+	font: 700 22px/100% $circular;
+	color: $primary;
+	margin-bottom: 30px;
+}
+
+h4 {
+	font: 400 18px/100% $circular;
+	color: $grey;
+	margin-bottom: 30px;
+}
+
+p {
+	font: 300 18px/23px $circular;
+	color: $grey;
+	margin-bottom: 15px;
+}
+	
+img {
+	max-width: 100%;
+	height: auto;
+}

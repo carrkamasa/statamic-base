@@ -3,9 +3,7 @@
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "browser-sync-webpack-plugin": "^2.0.1",
-    "laravel-mix": "^2.0.0",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1"
+    "laravel-mix": "^2.0.0"
   },
   "scripts": {
     "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -16,11 +14,6 @@
   "name": "ckd",
   "version": "1.0.0",
   "main": "webpack.min.js",
-  "dependencies": {
-    "barba.js": "^1.0.0",
-    "lost": "^8.2.0",
-    "slick-carousel": "^1.8.1"
-  },
   "keywords": [],
   "author": "Nat Hobson",
   "license": "ISC",
