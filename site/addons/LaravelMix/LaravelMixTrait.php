@@ -18,7 +18,7 @@ trait LaravelMixTrait
     /**
      * The name of Mix's revision manifest file.
      */
-    static $manifest = 'mix-manifest.json';
+    public static $manifest = 'mix-manifest.json';
 
     /**
      * Returns the path of given asset type.
@@ -28,7 +28,7 @@ trait LaravelMixTrait
      */
     public function getAssetPath($type)
     {
-        $src = $this->get('src', Config::get('theming.theme'));
+        $src = 'app';
         $path = '/' . $type . '/' . Str::ensureRight($src, '.' . $type);
         $manifest = $this->getManifest()->get($path);
 

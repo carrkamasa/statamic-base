@@ -2,15 +2,9 @@
 
     <div class="inner">
 
-        <div class="header--logo">
-            <a href="/">
-                <img src="{{ theme:dist/images src="logo.svg" cache_bust="true" }}">
-            </a>
-        </div>
+        <nav class="header-navigation">
 
-        <nav class="header--navigation">
-
-            <ul class="main-navigation--menu">
+            <ul class="head-navigation__links">
                 {{ nav from="/" include_home="true" scope="tag" }}
                     {{ if children }}
                     <li class="has-children">
@@ -29,6 +23,5 @@
             
         </nav>
 
-    </div>
 
 </section>

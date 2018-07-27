@@ -3,13 +3,16 @@
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "browser-sync-webpack-plugin": "^2.0.1",
-    "laravel-mix": "^2.0.0"
+    "laravel-mix": "^2.0.0",
+    "stylelint": "^8.2.0",
+    "stylelint-webpack-plugin": "^0.10.5"
   },
   "scripts": {
     "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --watch-poll --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"lint:styles": "stylelint \"src/scss/**/*.{css,sass,scss,sss,less}\""
   },
   "name": "ckd",
   "version": "1.0.0",
