@@ -14,37 +14,26 @@ html {
 body {
 	font: 300 18px/23px sans-serif;
 	color: $grey;
-	float: left;
-	width: 100%;
 }
 
 h1 {
-	font: 400 62px/75px $circular;
-	color: #fff;
-	margin: 0 0 20px;
+	font: 400 62px/75px $primary;
 }
 	
 h2 {
-	font: 300 18px/23px $circular;
-	color: #fff;
-	margin: 0;
+	font: 300 18px/23px $primary;
 }
 
 h3 {
-	font: 700 22px/100% $circular;
-	color: $primary;
-	margin-bottom: 30px;
+	font: 700 22px/100% $primary;
 }
 
 h4 {
-	font: 400 18px/100% $circular;
-	color: $grey;
-	margin-bottom: 30px;
+	font: 400 18px/100% $primary;
 }
 
 p {
-	font: 300 18px/23px $circular;
-	color: $grey;
+	font: 300 18px/23px $primary;
 	margin-bottom: 15px;
 }
 	

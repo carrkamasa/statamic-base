@@ -1,15 +1,9 @@
 // Colours
-$primary = #ad1f39
-$grey = #4f4f4f
-$greymed = #767676
-$greybg = #f8f8f9
-$greyline = #dbdbdb
-$black = #333
+$primary: #ad1f39;
+$grey: #4f4f4f;
+$greymed: #767676;
+$greybg: #f8f8f9;
+$black: #333;
 
 // Fonts
-$circular = "Circular", sans-serif
-
-// Lost grid settings
-@lost gutter 30px
-@lost flexbox flex
-@lost rounder 100
+$primary: "Brown", sans-serif;

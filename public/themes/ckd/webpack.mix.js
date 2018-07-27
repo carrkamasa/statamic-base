@@ -15,7 +15,7 @@ mix
         processCssUrls: false,
     })
     .js('src/js/main.js', 'js/app.js')
-    .css('src/stylus/main.scss', 'css/app.css')
+    .sass('src/scss/main.scss', 'css/app.css')
     .copyDirectory('src/images', 'dist/images')
     .copyDirectory('src/fonts', 'dist/fonts')
     .sourceMaps()
