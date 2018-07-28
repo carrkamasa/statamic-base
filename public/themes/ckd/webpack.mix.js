@@ -32,8 +32,8 @@ mix
         open: true,
         proxy: 'statamic.test',
         files: [
-            'src/stylus/*.scss',
-            'src/stylus/**/*.scss',
+            'src/styles/*.scss',
+            'src/styles/**/*.scss',
             'src/js/*.js',
             'templates/*.html',
             'templates/**/*.html',
