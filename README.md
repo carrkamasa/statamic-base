@@ -1,3 +1,5 @@
+[![Release](https://img.shields.io/badge/prerelease-v1.0.0--alpha-ff69b4.svg)](https://github.com/carrkamasa/statamic-base/releases/tag/v1.0.0-alpha)
+
 # Statamic base/scaffold
 This repo acts as a solid starting point for a Statamic project, including general configuration of Statamic and also a base theme
 
