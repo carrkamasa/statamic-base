@@ -28,7 +28,7 @@ mix
 
     .browserSync({
         open: true,
-        proxy: 'accrol.test',
+        proxy: 'statamic.test',
         files: [
             'src/styles/*.scss',
             'src/styles/**/*.scss',
