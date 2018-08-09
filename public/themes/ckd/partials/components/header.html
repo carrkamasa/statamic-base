@@ -5,18 +5,18 @@
         <nav class="header-navigation">
 
             <ul class="head-navigation__links">
-                {{ nav from="/" include_home="true" scope="tag" }}
+                {{ nav from="/" include_home="false" scope="tag" exclude="site-resources" }}
                     {{ if children }}
                     <li class="has-children">
-                        <a href="{{ url }}">{{ title }}</a>
+                        <a href="{{ url }}" class="{{ if is_current or is_parent }}active{{ /if }}">{{ title }}</a>
                         <ul class="dropdown">
                             {{ children }}
-                                <li><a href="{{ url }}">{{ title }}</a></li>
+                                <li><a href="{{ url }}" class="{{ if is_current or is_parent }}active{{ /if }}">{{ title }}</a></li>
                             {{ /children }}
                         </ul>
                     </li>
                     {{ else }}
-                        <li><a href="{{ url }}">{{ title }}</a></li>
+                        <li><a href="{{ url }}" class="{{ if is_current or is_parent }}active{{ /if }}">{{ title }}</a></li>
                     {{ endif }}
                 {{ /nav }}
             </ul>
