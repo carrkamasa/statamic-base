@@ -26,6 +26,8 @@ mix
 
     .copyDirectory('src/fonts', 'dist/fonts')
 
+    .version()
+
     .browserSync({
         open: true,
         proxy: 'statamic.test',
@@ -55,5 +57,4 @@ if (!mix.inProduction()) {
         devtool: 'source-map'
     })
     .sourceMaps()
-    .version()
 }
