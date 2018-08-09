@@ -9,9 +9,11 @@ mix
             jquery: 'jQuery'
         }
     })
+
     .autoload({
         jquery: ['$', 'window.jQuery', 'jQuery'],
     })
+    
     .options({
         processCssUrls: false,
     })
@@ -24,16 +26,13 @@ mix
 
     .copyDirectory('src/fonts', 'dist/fonts')
 
-    .sourceMaps()
-    
-    .version()
-
     .browserSync({
         open: true,
-        proxy: 'statamic.test',
+        proxy: 'accrol.test',
         files: [
             'src/styles/*.scss',
             'src/styles/**/*.scss',
+            'src/js/*/*.js',
             'src/js/*.js',
             'templates/*.html',
             'templates/**/*.html',
@@ -50,3 +49,11 @@ mix
 		]
     })
 ;
+
+if (!mix.inProduction()) {
+    mix.webpackConfig({
+        devtool: 'source-map'
+    })
+    .sourceMaps()
+    .version()
+}
